@@ -182,5 +182,11 @@ namespace crypto_lab_2.AES
             res += "}";
             return res;
         }
+
+        public void XOR(byte[] another)
+        {
+            for (int i = 0; i < BLOCK_SIZE; ++i)
+                data[i] ^= another[i];
+        }
     }
 }

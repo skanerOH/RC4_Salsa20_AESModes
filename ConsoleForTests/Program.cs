@@ -29,7 +29,7 @@ namespace ConsoleForTests
             string rootpath = "C:\\Users\\Skaner\\Downloads\\";
             string inpFileName = "lect10-earley (2).ppt";
 
-            FileChipherer chipherer = new FileChipherer(ChiphererAlgo.Salsa20);
+            FileChipherer chipherer = new FileChipherer(ChiphererAlgo.AESmodeCTR);
 
             Stopwatch stopwatch = new Stopwatch();
 

@@ -10,10 +10,10 @@ namespace crypto_lab_2.AES
         private readonly byte[] roundCoefficient = new byte[ROUND_NO] {
             0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36 };
 
-        private AESBlock key;
+        public AESBlock key;
         private AESBlock[] roundKeys = new AESBlock[ROUND_NO + 1];
 
-        private void GenerateSubKeys()
+        public void GenerateSubKeys()
         {
             roundKeys[0] = new AESBlock(key);
             for (int i = 0; i < ROUND_NO; ++i)
