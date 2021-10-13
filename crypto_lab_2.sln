@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypto_lab_2", "crypto_lab_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleForTests", "ConsoleForTests\ConsoleForTests.csproj", "{DC71ABD2-1237-435A-BFDC-8668CC2A324A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{393D3BD9-31F4-4785-9373-E772DA3F6D13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DC71ABD2-1237-435A-BFDC-8668CC2A324A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC71ABD2-1237-435A-BFDC-8668CC2A324A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC71ABD2-1237-435A-BFDC-8668CC2A324A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393D3BD9-31F4-4785-9373-E772DA3F6D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393D3BD9-31F4-4785-9373-E772DA3F6D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393D3BD9-31F4-4785-9373-E772DA3F6D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393D3BD9-31F4-4785-9373-E772DA3F6D13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

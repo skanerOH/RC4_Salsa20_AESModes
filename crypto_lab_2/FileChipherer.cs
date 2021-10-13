@@ -9,11 +9,11 @@ namespace crypto_lab_2
 {
     public enum ChiphererAlgo
     {
-        AESmodeECB,
-        AESmodeCBC,
-        AESmodeCFB,
-        AESmodeOFB,
-        AESmodeCTR,
+        AES_ECB,
+        AES_CBC,
+        AES_CFB,
+        AES_OFB,
+        AES_CTR,
         RC4,
         Salsa20
     }
@@ -28,7 +28,7 @@ namespace crypto_lab_2
         {
             switch (algo)
             {
-                case ChiphererAlgo.AESmodeECB:
+                case ChiphererAlgo.AES_ECB:
                     chipherer = new AESmodeECB(key);
                     break;
                 case ChiphererAlgo.RC4:
@@ -43,19 +43,19 @@ namespace crypto_lab_2
         {
             switch (algo)
             {
-                case ChiphererAlgo.AESmodeECB:
+                case ChiphererAlgo.AES_ECB:
                     chipherer = new AESmodeECB(Encoding.ASCII.GetBytes("aaaabbbbccccdddd"));
                     break;
-                case ChiphererAlgo.AESmodeCBC:
+                case ChiphererAlgo.AES_CBC:
                     chipherer = new AESmodeCBC(Encoding.ASCII.GetBytes("aaaabbbbccccdddd"), Encoding.ASCII.GetBytes("oooooooooooooooo"));
                     break;
-                case ChiphererAlgo.AESmodeCFB:
+                case ChiphererAlgo.AES_CFB:
                     chipherer = new AESmodeCFB(Encoding.ASCII.GetBytes("aaaabbbbccccdddd"), Encoding.ASCII.GetBytes("oooooooooooooooo"));
                     break;
-                case ChiphererAlgo.AESmodeOFB:
+                case ChiphererAlgo.AES_OFB:
                     chipherer = new AESmodeOFB(Encoding.ASCII.GetBytes("aaaabbbbccccdddd"), Encoding.ASCII.GetBytes("oooooooooooooooo"));
                     break;
-                case ChiphererAlgo.AESmodeCTR:
+                case ChiphererAlgo.AES_CTR:
                     chipherer = new AESmodeCTR(Encoding.ASCII.GetBytes("aaaabbbbccccdddd"), Encoding.ASCII.GetBytes("oooooooooooooooo"));
                     break;
                 case ChiphererAlgo.RC4:
